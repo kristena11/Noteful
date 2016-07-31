@@ -1,7 +1,9 @@
-<div>
+<div class="show">
+    <div class= "text">
   
-  <h1><%= @note.title %></h1>
-  <p><%= simple_format @note.content %></p>
-
-   <p><%= link_to 'Back', notes_path %> | <%= link_to 'Edit', edit_note_path(@note) %></p>
+      <h1><%= @note.title %></h1>
+      <p><%= simple_format @note.content %></p>
+    
+       <p><%= link_to 'Back', notes_path %> | <%= link_to 'Edit', edit_note_path(@note) %></p>
+    </div>
 </div>

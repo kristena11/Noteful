@@ -1,8 +1,40 @@
-<h1 class="center">Welcome to Noteful</h1>
-<p class="center">Take notes online and access them from anywhere!</p>
 
-<% if current_user %>
-  Check out <%= link_to "all your notes", notes_path %>
-<% else %>
-  <%= link_to "Sign in", new_user_session_path %> or <%= link_to "sign up", new_user_registration_path %> to start creating notes
-<% end %>
+<body>
+		<div class="jumbotron">
+			<h1>Welcome to Noteful</h1>	
+			<p>Take notes online and access them from anywhere!</p>
+			<% if current_user %>
+         <button class="btn btn-success"><%= link_to "All Your Notes", notes_path %></button>
+      <% else %>
+        	<button class="btn btn-success"><%= link_to "Sign in", new_user_session_path %></button> or 	<button class="btn btn-success"><%= link_to "sign up", new_user_registration_path %></button> 
+      <% end %>
+		
+		</div>
+	
+		<div class="container">
+			<div class="list-items">
+				<li class="col-md-4">
+					<i class="fa fa-sticky-note"></i>
+					<h1> molestie adipiscing</h1>
+					<p>
+						Lorem ipsum dolor sit amet, regione molestie adipiscing an duo. Solum nihil commodo id eos, porro epicuri disputando cum ei. Exerci invenire comprehensam cu has. Consul ubique aliquam mea ne, nam eu tale partiendo, velit essent quaeque ad mel. Graecis luptatum quo ut, per cu case mucius appellantur.
+					</p>
+				</li>
+				<li class="col-md-4">
+					<i class="fa fa-globe"></i>
+					<h1>adipiscing an duo</h1>
+					<p>
+						Lorem ipsum dolor sit amet, regione molestie adipiscing an duo. Solum nihil commodo id eos, porro epicuri disputando cum ei. Exerci invenire comprehensam cu has. Consul ubique aliquam mea ne, nam eu tale partiendo, velit essent quaeque ad mel. Graecis luptatum quo ut, per cu case mucius appellantur.
+					</p>
+				</li>
+				<li  class="col-md-4">
+					<i class="fa fa-mobile"></i>
+					<h1>regione molestie</h1>
+					<p>
+						Lorem ipsum dolor sit amet, regione molestie adipiscing an duo. Solum nihil commodo id eos, porro epicuri disputando cum ei. Exerci invenire comprehensam cu has. Consul ubique aliquam mea ne, nam eu tale partiendo, velit essent quaeque ad mel. Graecis luptatum quo ut, per cu case mucius appellantur.
+					</p>
+				</li>
+			</div>
+		</div>
+  
+	</body>
